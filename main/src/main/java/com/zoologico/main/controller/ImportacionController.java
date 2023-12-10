@@ -18,7 +18,7 @@ public class ImportacionController {
     @ResponseBody
     @GetMapping("/datosCSV")
     public String importarDatosCSV() {
-        bbddServicios.importarDatosCSV();
+        bbddServicios.servicioBBDD();
         return "Importación de datos CSV realizada2";
     }
 
