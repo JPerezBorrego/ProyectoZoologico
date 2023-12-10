@@ -1,0 +1,200 @@
+leon ,Panthera leo,masculino,mamifero,28/11/2016,1,1
+leon ,Panthera leo,femenino,mamifero,02/02/2004,1,1
+leon ,Panthera leo,masculino,mamifero,31/03/2009,1,1
+tigre ,Panthera tigris,femenino,mamifero,20/05/2009,1,1
+tigre ,Panthera tigris,masculino,mamifero,24/08/2020,1,1
+tigre ,Panthera tigris,femenino,mamifero,28/12/2017,1,1
+leon marino ,Zalophus wollebaeki,masculino,mamifero,03/07/2013,2,2
+leon marino ,Zalophus wollebaeki,femenino,mamifero,16/06/2009,2,2
+leon marino ,Zalophus wollebaeki,femenino,mamifero,29/08/2024,2,2
+leon marino ,Zalophus wollebaeki,masculino,mamifero,06/05/2023,2,2
+leon marino ,Zalophus wollebaeki,femenino,mamifero,08/08/2023,2,2
+leon marino ,Zalophus wollebaeki,masculino,mamifero,14/07/2009,2,2
+pinguinos,Pinguinus impennis,masculino,ave,11/01/2009,2,3
+pinguinos,Pinguinus impennis,femenino,ave,10/10/2007,2,3
+pinguinos,Pinguinus impennis,masculino,ave,26/11/2019,2,3
+pinguinos,Pinguinus impennis,femenino,ave,24/09/2008,2,3
+pinguinos,Pinguinus impennis,masculino,ave,16/10/2021,2,3
+pinguinos,Pinguinus impennis,femenino,ave,15/07/2014,2,3
+pinguinos,Pinguinus impennis,masculino,ave,08/01/2006,2,3
+pinguinos,Pinguinus impennis,femenino,ave,25/07/2023,2,3
+pinguinos,Pinguinus impennis,masculino,ave,31/01/2014,2,4
+pinguinos,Pinguinus impennis,femenino,ave,09/10/2023,2,4
+pinguinos,Pinguinus impennis,femenino,ave,03/06/2008,2,4
+pinguinos,Pinguinus impennis,femenino,ave,11/04/2024,2,4
+cocodrilos,Crocodilia,masculino,reptil ,07/11/2021,2,4
+cocodrilos,Crocodilia,femenino,reptil ,26/04/2005,2,4
+cocodrilos,Crocodilia,femenino,reptil ,02/08/2006,2,4
+cocodrilos,Crocodilia,masculino,reptil ,20/02/2020,2,4
+cocodrilos,Crocodilia,masculino,reptil ,22/10/2016,2,4
+zebras,Equus�zebra ,femenino,mamifero,11/04/2004,1,5
+zebras,Equus�zebra ,masculino,mamifero,05/08/2009,1,5
+zebras,Equus�zebra ,masculino,mamifero,23/01/2013,1,5
+zebras,Equus�zebra ,femenino,mamifero,01/04/2014,1,5
+zebras,Equus�zebra ,masculino,mamifero,28/12/2009,1,5
+zebras,Equus�zebra ,masculino,mamifero,10/07/2021,1,5
+zebras,Equus�zebra ,femenino,mamifero,10/06/2020,1,5
+koala,Phascolarctos cinereus,masculino,mamifero,30/11/2008,5,5
+koala,Phascolarctos cinereus,masculino,mamifero,07/09/2018,5,5
+koala,Phascolarctos cinereus,femenino,mamifero,24/06/2007,5,17
+koala,Phascolarctos cinereus,femenino,mamifero,10/03/2022,5,17
+koala,Phascolarctos cinereus,femenino,mamifero,07/02/2019,5,17
+oso pardo ,Ursus arctos,masculino,mamifero,15/02/2020,4,17
+oso pardo ,Ursus arctos,femenino,mamifero,27/03/2015,4,17
+oso pardo ,Ursus arctos,femenino,mamifero,06/07/2005,4,17
+oso pardo ,Ursus arctos,masculino,mamifero,18/07/2020,4,17
+oso pardo ,Ursus arctos,masculino,mamifero,11/12/2012,4,17
+oso pardo ,Ursus arctos,femenino,mamifero,05/07/2018,4,17
+oso pardo ,Ursus arctos,femenino,mamifero,31/08/2016,4,18
+elefantes,Elephantidae ,masculino,mamifero,20/10/2008,1,18
+elefantes,Elephantidae ,femenino,mamifero,26/08/2010,1,18
+elefantes,Elephantidae ,masculino,mamifero,23/02/2007,1,18
+elefantes,Elephantidae ,masculino,mamifero,05/08/2005,1,18
+elefantes,Elephantidae ,femenino,mamifero,27/11/2019,1,18
+elefantes,Elephantidae ,masculino,mamifero,27/03/2017,1,18
+elefantes,Elephantidae ,femenino,mamifero,08/06/2023,1,18
+elefantes,Elephantidae ,masculino,mamifero,01/01/2006,1,18
+jirafas,Giraffa camelopardalis,femenino,mamifero,26/01/2018,1,18
+jirafas,Giraffa camelopardalis,masculino,mamifero,05/10/2006,1,18
+jirafas,Giraffa camelopardalis,masculino,mamifero,10/06/2023,1,19
+perezoso,Folivora,femenino,mamifero,23/08/2018,7,19
+suricata ,Suricata suricatta,masculino,mamifero,09/02/2016,7,19
+suricata ,Suricata suricatta,masculino,mamifero,11/09/2004,7,19
+suricata ,Suricata suricatta,femenino,mamifero,21/10/2010,7,19
+suricata ,Suricata suricatta,masculino,mamifero,20/03/2016,7,19
+suricata ,Suricata suricatta,femenino,mamifero,05/01/2010,7,19
+nutrias,Lutrinae ,masculino,mamifero,22/05/2021,8,19
+nutrias,Lutrinae ,femenino,mamifero,26/09/2007,8,19
+nutrias,Lutrinae ,masculino,mamifero,29/10/2018,8,19
+rinoceronte ,Rhinocerotidae ,femenino,mamifero,04/03/2022,1,20
+rinoceronte ,Rhinocerotidae ,masculino,mamifero,28/01/2015,1,20
+rinoceronte ,Rhinocerotidae ,femenino,mamifero,26/07/2006,1,20
+mono ,Ateles ,femenino,mamifero,03/09/2016,4,20
+mono ,Ateles ,femenino,mamifero,30/04/2013,4,20
+mono ,Ateles ,masculino,mamifero,05/02/2004,4,20
+mono ,Ateles ,femenino,mamifero,21/12/2007,4,20
+mono ,Ateles ,femenino,mamifero,16/07/2018,4,20
+mono ,Ateles ,masculino,mamifero,01/01/2009,4,20
+guepardo ,Acinonyx jubatus,femenino,mamifero,06/05/2018,4,20
+guepardo ,Acinonyx jubatus,masculino,mamifero,01/01/2012,4,20
+guepardo ,Acinonyx jubatus,masculino,mamifero,13/02/2008,4,20
+guepardo ,Acinonyx jubatus,femenino,mamifero,24/04/2023,4,28
+oso panda ,Ailuropoda melanoleuca,masculino,mamifero,11/11/2024,5,28
+oso panda ,Ailuropoda melanoleuca,masculino,mamifero,23/01/2023,5,28
+oso panda ,Ailuropoda melanoleuca,femenino,mamifero,11/12/2005,5,28
+oso panda ,Ailuropoda melanoleuca,masculino,mamifero,06/04/2017,5,28
+lemur ,Lemuroidea ,femenino,mamifero,30/10/2006,4,28
+lemur ,Lemuroidea ,masculino,mamifero,06/11/2017,4,28
+lemur ,Lemuroidea ,femenino,mamifero,07/09/2012,4,28
+loros,Psittacoidea ,masculino,ave,28/09/2007,4,28
+loros,Psittacoidea ,femenino,ave,15/08/2015,4,28
+loros,Psittacoidea ,masculino,ave,04/03/2024,4,28
+loros,Psittacoidea ,femenino,ave,27/01/2020,4,28
+loros,Psittacoidea ,masculino,ave,11/02/2009,4,28
+tucan ,Ramphastidae ,femenino,ave,20/12/2007,4,28
+tucan ,Ramphastidae ,masculino,ave,06/02/2013,4,31
+tucan ,Ramphastidae ,femenino,ave,23/03/2008,4,31
+buitres,Aegypius monachus ,femenino,ave,26/11/2020,1,31
+buitres,Aegypius monachus ,femenino,ave,18/12/2014,1,31
+buitres,Aegypius monachus ,masculino,ave,02/03/2005,1,31
+buitres,Aegypius monachus ,masculino,ave,14/01/2006,1,31
+aguila ,Aquila chrysaetos,masculino,ave,24/04/2008,7,31
+aguila ,Aquila chrysaetos,masculino,ave,30/10/2011,7,31
+aguila ,Aquila chrysaetos,femenino,ave,18/04/2022,7,31
+aguila ,Aquila chrysaetos,masculino,ave,23/10/2020,7,31
+aguila ,Aquila chrysaetos,femenino,ave,25/10/2024,7,31
+aguila ,Aquila chrysaetos,masculino,ave,02/02/2011,7,31
+aguila ,Aquila chrysaetos,femenino,ave,06/02/2006,7,1
+flamencos ,Phoenicopterus ,femenino,ave,28/04/2023,8,1
+flamencos ,Phoenicopterus ,masculino,ave,08/05/2018,8,1
+flamencos ,Phoenicopterus ,masculino,ave,28/09/2009,8,1
+buho,Strigiformes ,femenino,ave,24/02/2008,7,1
+buho,Strigiformes ,masculino,ave,29/12/2013,7,1
+mapache ,Procyon ,masculino,mamifero,05/06/2006,5,1
+mapache ,Procyon ,femenino,mamifero,04/07/2008,5,1
+mapache ,Procyon ,masculino,mamifero,28/05/2007,5,2
+mapache ,Procyon ,femenino,mamifero,11/02/2006,5,2
+gorila ,Gorilla ,masculino,mamifero,14/11/2005,4,2
+gorila ,Gorilla ,femenino,mamifero,04/06/2017,4,2
+gorila ,Gorilla ,masculino,mamifero,15/12/2010,5,2
+armadillo,Dasypodidae ,femenino,mamifero,31/10/2020,5,2
+armadillo,Dasypodidae ,masculino,mamifero,02/12/2008,5,2
+armadillo,Dasypodidae ,masculino,mamifero,09/06/2005,5,2
+armadillo,Dasypodidae ,femenino,mamifero,21/07/2007,5,3
+oso hormiguero,Myrmecophaga tridactyla ,masculino,mamifero,23/03/2009,4,3
+oso hormiguero,Myrmecophaga tridactyla ,femenino,mamifero,01/09/2008,4,3
+oso hormiguero,Myrmecophaga tridactyla ,masculino,mamifero,27/10/2019,4,3
+impalas,Aepyceros melampus ,femenino,mamifero,26/01/2018,1,3
+impalas,Aepyceros melampus ,masculino,mamifero,16/03/2008,1,3
+impalas,Aepyceros melampus ,masculino,mamifero,04/07/2023,1,3
+impalas,Aepyceros melampus ,femenino,mamifero,16/11/2021,1,4
+impalas,Aepyceros melampus ,masculino,mamifero,17/09/2016,1,4
+�u,Connochaetes ,masculino,mamifero,30/11/2015,1,4
+�u,Connochaetes ,femenino,mamifero,11/05/2005,1,4
+�u,Connochaetes ,masculino,mamifero,11/07/2008,1,4
+�u,Connochaetes ,masculino,mamifero,05/02/2011,1,4
+�u,Connochaetes ,femenino,mamifero,02/01/2005,1,4
+dragon de comodo,Varanus komodoensis ,masculino,reptil,30/09/2007,2,5
+dragon de comodo,Varanus komodoensis ,masculino,reptil,23/10/2024,2,5
+dragon de comodo,Varanus komodoensis ,femenino,reptil,11/05/2023,2,5
+serpiente ,Serpentes ,masculino,reptil,08/03/2022,2,5
+serpiente ,Serpentes ,masculino,reptil,26/01/2016,2,5
+serpiente ,Serpentes ,femenino,reptil,24/04/2005,2,5
+serpiente ,Serpentes ,masculino,reptil,18/07/2011,2,5
+ara�a ,Araneae ,masculino,insecto,13/01/2019,2,29
+ara�a ,Araneae ,femenino,insecto,05/09/2018,2,29
+ara�a ,Araneae ,masculino,insecto,23/08/2016,2,29
+ara�a ,Araneae ,masculino,insecto,07/07/2004,2,29
+higuana ,Iguana ,masculino,reptil,27/03/2012,2,29
+higuana ,Iguana ,femenino,reptil,18/11/2022,2,29
+higuana ,Iguana ,masculino,reptil,06/01/2018,2,29
+lagarto,Lacertilia ,masculino,reptil,04/04/2013,2,29
+lagarto,Lacertilia ,femenino,reptil,13/07/2007,2,29
+canguro,Macropodidae ,masculino,mamifero,09/03/2016,7,29
+canguro,Macropodidae ,masculino,mamifero,01/07/2009,7,29
+canguro,Macropodidae ,femenino,mamifero,10/07/2012,7,29
+canguro,Macropodidae ,masculino,mamifero,23/04/2018,7,17
+avestruz ,Struthio camelus ,masculino,ave,01/05/2016,7,17
+avestruz ,Struthio camelus ,femenino,ave,10/01/2013,7,17
+emu ,Dromaius novaehollandiae ,masculino,ave,31/05/2023,5,17
+emu ,Dromaius novaehollandiae ,femenino,ave,13/07/2013,5,17
+emu ,Dromaius novaehollandiae ,masculino,ave,10/10/2004,5,17
+emu ,Dromaius novaehollandiae ,femenino,ave,22/07/2021,5,17
+camaleon,Chamaeleonidae ,masculino,reptil,28/02/2005,2,17
+camaleon,Chamaeleonidae ,femenino,reptil,13/10/2005,2,17
+camaleon,Chamaeleonidae ,femenino,reptil,25/10/2021,2,17
+camaleon,Chamaeleonidae ,masculino,reptil,16/07/2017,2,17
+camaleon,Chamaeleonidae ,femenino,reptil,23/07/2013,2,18
+zorro,Vulpini ,masculino,mamifero,05/12/2020,5,17
+zorro,Vulpini ,femenino,mamifero,23/11/2022,5,17
+zorro,Vulpini ,masculino,mamifero,01/02/2011,5,17
+zorro,Vulpini ,masculino,mamifero,23/10/2022,5,17
+zorro,Vulpini ,femenino,mamifero,28/08/2012,5,17
+lobos ,Canis lupus ,masculino,mamifero,21/06/2013,8,17
+lobos ,Canis lupus ,masculino,mamifero,08/08/2007,8,17
+lobos ,Canis lupus ,femenino,mamifero,24/02/2021,8,17
+lobos ,Canis lupus ,masculino,mamifero,22/04/2023,8,17
+lobos ,Canis lupus ,masculino,mamifero,01/09/2007,8,4
+lobos ,Canis lupus ,femenino,mamifero,02/12/2016,8,4
+lobos ,Canis lupus ,masculino,mamifero,27/10/2011,8,4
+hienas,Hyaenidae ,masculino,mamifero,09/12/2020,1,4
+hienas,Hyaenidae ,femenino,mamifero,02/04/2016,1,4
+hienas,Hyaenidae ,masculino,mamifero,03/03/2008,1,4
+hienas,Hyaenidae ,masculino,mamifero,09/02/2016,1,5
+capibara,Hydrochoerus hydrochaeris ,femenino,mamifero,30/11/2018,8,5
+capibara,Hydrochoerus hydrochaeris ,masculino,mamifero,14/03/2018,8,5
+capibara,Hydrochoerus hydrochaeris ,masculino,mamifero,07/04/2012,8,5
+capibara,Hydrochoerus hydrochaeris ,femenino,mamifero,22/06/2007,8,5
+capibara,Hydrochoerus hydrochaeris ,femenino,mamifero,14/02/2010,8,5
+tortugas,Testudines ,femenino,anfibio,07/05/2021,3,5
+tortugas,Testudines ,masculino,anfibio,15/09/2013,3,31
+tortugas,Testudines ,femenino,anfibio,06/06/2017,3,31
+tortugas,Testudines ,masculino,anfibio,17/08/2007,3,31
+ranas,Anura ,femenino,anfibio,18/04/2008,3,31
+ranas,Anura ,masculino,anfibio,22/11/2016,3,31
+ranas,Anura ,femenino,anfibio,12/09/2022,3,31
+ranas,Anura ,femenino,anfibio,06/01/2014,3,31
+ranas,Anura ,masculino,anfibio,14/12/2008,3,1
+delfin,Delphinidae ,femenino,mamifero,17/06/2016,3,2
+delfin,Delphinidae ,masculino,mamifero,21/02/2006,3,4
+delfin,Delphinidae ,femenino,mamifero,13/12/2007,3,1

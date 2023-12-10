@@ -33,12 +33,13 @@ public class BBDDservicio{
             connection = DriverManager.getConnection(url, login, password);
             System.out.println("Conexión a " + db + " correcta");
 
-            importarAnimales(connection, rutaArchivoAnimales);
-            importarHabitat(connection, rutaArchivoHabitat);
             importarPersonal(connection, rutaArchivoPersonal);
+            importarHabitat(connection, rutaArchivoHabitat);
+            importarAnimales(connection, rutaArchivoAnimales);
+            importarZoo(connection, rutaArchivoZoo); 
             importarVisitas(connection, rutaArchivoVisitas);
             importarPrecios(connection, rutaArchivoPrecios);
-            importarZoo(connection, rutaArchivoZoo); 
+           
 
             System.out.println("Importación completa.");
 
