@@ -5,10 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.thoughtworks.xstream.XStream;
-import com.zoologico.main.repository.AnimalRepository;
 import com.zoologico.main.repository.entities.Animales;
-import com.zoologico.main.repository.entities.Habitat;
-import com.zoologico.main.repository.entities.Personal;
 import com.zoologico.main.service.AnimalesService;
 
 import java.io.FileWriter;
@@ -29,8 +26,7 @@ public class AnimalesControllerExportar {
         // Configuración de XStream
         XStream xStream = new XStream();
         xStream.alias("animal", Animales.class);
-        xStream.alias("Habitat", Habitat.class);
-        xStream.alias("Personal", Personal.class);
+
         // Convertir la lista de animales a XML
         String xml = xStream.toXML(animals);
 
