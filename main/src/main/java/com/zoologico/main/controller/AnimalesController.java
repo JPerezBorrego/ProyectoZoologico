@@ -1,14 +1,15 @@
 package com.zoologico.main.controller;
 
 import java.util.List;
-
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import com.zoologico.main.repository.entities.Animales;
 import com.zoologico.main.service.AnimalesService;
 @Controller
@@ -41,5 +42,9 @@ public ResponseEntity<Animales> getAnimalById(@PathVariable Long animalId) {
 public List<Animales> obtenerAnimalesPorNombre(@PathVariable String nombre) {
     return animalService.obtenerAnimalesPorNombre(nombre);
 }
+
+
+
+
 }
 
