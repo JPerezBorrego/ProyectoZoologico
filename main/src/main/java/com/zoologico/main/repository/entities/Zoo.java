@@ -14,7 +14,7 @@ public class Zoo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_zoo")
-    private int idZoo;
+    private Long idZoo;
 
     @Column(name = "nombre", nullable = false, length = 50)
     private String nombre;
@@ -34,11 +34,11 @@ public class Zoo {
     @Column(name = "correo", length = 50)
     private String correo;
 
-    public int getIdZoo() {
+    public Long getIdZoo() {
         return idZoo;
     }
 
-    public void setIdZoo(int idZoo) {
+    public void setIdZoo(Long idZoo) {
         this.idZoo = idZoo;
     }
 

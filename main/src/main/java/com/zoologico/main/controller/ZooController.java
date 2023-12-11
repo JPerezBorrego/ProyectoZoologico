@@ -1,5 +1,4 @@
 package com.zoologico.main.controller;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import com.zoologico.main.repository.entities.Zoo;
@@ -12,7 +11,7 @@ import java.util.List;
 public class ZooController {
 
     private final ZooService zooService;
-    
+
     public ZooController(ZooService zooService) {
         this.zooService = zooService;
     }
