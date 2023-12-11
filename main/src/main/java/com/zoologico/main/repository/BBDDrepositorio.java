@@ -15,12 +15,12 @@ import org.springframework.stereotype.Repository;
 public class BBDDrepositorio{
 
     public void importarDatosCSV(){
-        String rutaArchivoPersonal = "C:\\Users\\josea\\Desktop\\ProyectoZoologico\\main\\csv\\personal.csv";
-        String rutaArchivoHabitat = "C:\\Users\\josea\\Desktop\\ProyectoZoologico\\main\\csv\\habitat.csv";
-        String rutaArchivoZoo = "C:\\Users\\josea\\Desktop\\ProyectoZoologico\\main\\csv\\Zoo.csv";
-        String rutaArchivoAnimales = "C:\\Users\\josea\\Desktop\\ProyectoZoologico\\main\\csv\\Animales.csv";
-        String rutaArchivoVisitas = "C:\\Users\\josea\\Desktop\\ProyectoZoologico\\main\\csv\\visitas.csv";
-        String rutaArchivoPrecios = "C:\\Users\\josea\\Desktop\\ProyectoZoologico\\main\\csv\\precios.csv";
+        String rutaArchivoPersonal = ".\\main\\csv\\personal.csv";
+        String rutaArchivoHabitat = ".\\main\\csv\\habitat.csv";
+        String rutaArchivoZoo = ".\\main\\csv\\Zoo.csv";
+        String rutaArchivoAnimales = ".\\main\\csv\\Animales.csv";
+        String rutaArchivoVisitas = ".\\main\\csv\\visitas.csv";
+        String rutaArchivoPrecios = ".\\main\\csv\\precios.csv";
         String db = "zoo";
         String login = "root";
         String password = "";
