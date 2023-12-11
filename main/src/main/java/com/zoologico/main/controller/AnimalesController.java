@@ -1,5 +1,7 @@
 package com.zoologico.main.controller;
 
+import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,8 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.zoologico.main.repository.entities.Animales;
 import com.zoologico.main.service.AnimalesService;
-
-import java.util.List;
 @Controller
 @RestController
 @RequestMapping("/TodosLosAnimales")
@@ -37,7 +37,7 @@ public ResponseEntity<Animales> getAnimalById(@PathVariable Long animalId) {
     }
 }
 //Ver animales por nombre
-@GetMapping("/animales/nombre/{nombre}")
+@GetMapping("/animal/nombre/{nombre}")
 public List<Animales> obtenerAnimalesPorNombre(@PathVariable String nombre) {
     return animalService.obtenerAnimalesPorNombre(nombre);
 }

@@ -2,6 +2,7 @@ package com.zoologico.main.repository.entities;
 
 import java.math.BigDecimal;
 import java.util.Date;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -25,7 +26,7 @@ public class Visitas {
     private Integer cantidadPersonas;
 
     @Column(name = "tipo")
-    private Integer tipo;
+    private String tipo;
 
     @Column(name = "precio_id")
     private BigDecimal precioId;
@@ -56,11 +57,11 @@ public class Visitas {
         this.cantidadPersonas = cantidadPersonas;
     }
 
-    public Integer getTipo() {
+    public String getTipo() {
         return tipo;
     }
 
-    public void setTipo(Integer tipo) {
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 

@@ -7,20 +7,20 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
 import org.springframework.stereotype.Repository;
-import java.text.SimpleDateFormat;
 @Repository
 public class BBDDrepositorio{
 
     public void importarDatosCSV(){
-        String rutaArchivoPersonal = "C:\\Users\\josea\\Desktop\\zoologico\\zoologico\\csv\\personal.csv";
-        String rutaArchivoHabitat = "C:\\Users\\josea\\Desktop\\zoologico\\zoologico\\csv\\habitat.csv";
-        String rutaArchivoZoo = "C:\\Users\\josea\\Desktop\\zoologico\\zoologico\\csv\\Zoo.csv";
-        String rutaArchivoAnimales = "C:\\Users\\josea\\Desktop\\zoologico\\zoologico\\csv\\Animales.csv";
-        String rutaArchivoVisitas = "C:\\Users\\josea\\Desktop\\zoologico\\zoologico\\csv\\visitas.csv";
-        String rutaArchivoPrecios = "C:\\Users\\josea\\Desktop\\zoologico\\zoologico\\csv\\precios.csv";
+        String rutaArchivoPersonal = "C:\\Users\\josea\\Desktop\\ProyectoZoologico\\main\\csv\\personal.csv";
+        String rutaArchivoHabitat = "C:\\Users\\josea\\Desktop\\ProyectoZoologico\\main\\csv\\habitat.csv";
+        String rutaArchivoZoo = "C:\\Users\\josea\\Desktop\\ProyectoZoologico\\main\\csv\\Zoo.csv";
+        String rutaArchivoAnimales = "C:\\Users\\josea\\Desktop\\ProyectoZoologico\\main\\csv\\Animales.csv";
+        String rutaArchivoVisitas = "C:\\Users\\josea\\Desktop\\ProyectoZoologico\\main\\csv\\visitas.csv";
+        String rutaArchivoPrecios = "C:\\Users\\josea\\Desktop\\ProyectoZoologico\\main\\csv\\precios.csv";
         String db = "zoo";
         String login = "root";
         String password = "";
@@ -225,7 +225,7 @@ public static void importarVisitas(Connection connection, String rutaArchivoVisi
                 String fechaVisitaStr = campos[0];
                 int cantidadPersonas = Integer.parseInt(campos[1]);
                 String tipo = campos[2];
-                double precioId = Double.parseDouble(campos[3]);
+                int precioId = Integer.parseInt(campos[3]);
                 int zooId = Integer.parseInt(campos[4]);
 
                 // Convertir la cadena de fecha al formato de MySQL
@@ -236,7 +236,7 @@ public static void importarVisitas(Connection connection, String rutaArchivoVisi
                 preparedStatement.setDate(1, fechaVisita);
                 preparedStatement.setInt(2, cantidadPersonas);
                 preparedStatement.setString(3, tipo);
-                preparedStatement.setDouble(4, precioId);
+                preparedStatement.setInt(4, precioId);
                 preparedStatement.setInt(5, zooId);
 
                 System.out.println("Insertando en visitas: " + fechaVisitaStr + ", " + cantidadPersonas + "," + tipo + "," + precioId + "," + zooId);
