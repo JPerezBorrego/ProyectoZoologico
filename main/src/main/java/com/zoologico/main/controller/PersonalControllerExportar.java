@@ -11,25 +11,26 @@ import com.zoologico.main.service.PersonalService;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.List;
 @RestController
 @RequestMapping("/ExportarPersonal")
 public class PersonalControllerExportar {
-    private static final Object Personal = null;
+    
     @Autowired
-    private  PersonalService animalService;
+    private  PersonalService PersonalService;
 
    
 
     @GetMapping
     public String getAllPersonalString() {
         PersonalService.getAllPersonal();
-
+        List<Personal> listapersonal = PersonalService.getAllPersonal();
         // Configuración de XStream
         XStream xStream = new XStream();
         xStream.alias("Personal", Personal.class);
 
         // Convertir la lista de personal a XML
-        String xml = xStream.toXML(Personal);
+        String xml = xStream.toXML(listapersonal);
 
         // Guardar la cadena XML en un archivo
         try (FileWriter fileWriter = new FileWriter("Personal.xml")) {
