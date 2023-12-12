@@ -101,6 +101,7 @@ public class BBDDrepositorio{
         try {
             Thread.sleep(5000); // 5 segundos de retraso
             importarRunnable.run();
+            System.out.println("Esperando 5 segundos para insertar la siguiente tabla");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -124,7 +125,7 @@ public class BBDDrepositorio{
 
                     preparedStatement.setString(1, nombre);
                     preparedStatement.setString(2, tipo);
-                     System.out.println("Insertando en personal: " + nombre + ", " + tipo );
+                     System.out.println("Insertando en habitat: " + nombre + ", " + tipo );
                     preparedStatement.executeUpdate();
                 }
             }
@@ -159,7 +160,7 @@ public class BBDDrepositorio{
                     preparedStatement.setString(5, fechaNacimiento);
                     preparedStatement.setInt(6, habitatId);
                     preparedStatement.setInt(7, personalId);
-                    System.out.println("Insertando en personal: " + nombre + ", " + nombreCientifico + "," + genero + ", " + especie + "," + fechaNacimiento + "," + habitatId + "," + personalId );
+                    System.out.println("Insertando en animales: " + nombre + ", " + nombreCientifico + "," + genero + ", " + especie + "," + fechaNacimiento + "," + habitatId + "," + personalId );
                     preparedStatement.executeUpdate();
                 }
             }
@@ -204,7 +205,7 @@ public class BBDDrepositorio{
                     System.out.println("Insertando en zoo: " + nombre + ", " + direccion + "," + ciudad + "," + pais + "," + telefono + "," + correo);
                     preparedStatement.executeUpdate();
                 } else {
-                    System.out.println("Formato incorrecto en la línea del archivo CSV: " + Arrays.toString(campos));
+                    
                 }
             }
     
@@ -277,7 +278,7 @@ public static void importarVisitas(Connection connection, String rutaArchivoVisi
                     preparedStatement.setString(1, categoria);
                     preparedStatement.setDouble(2, cantidad);
                     preparedStatement.setInt(3, zooId);
-                    System.out.println("Insertando en visitas: " + categoria + ", " + cantidad + "," + zooId );
+                    System.out.println("Insertando en precios: " + categoria + ", " + cantidad + "," + zooId );
                     preparedStatement.executeUpdate();
                 }
             }
