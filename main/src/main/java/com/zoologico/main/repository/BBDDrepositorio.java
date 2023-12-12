@@ -17,7 +17,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class BBDDrepositorio{
 
-    public void importarDatosCSV(){
+    public void importarDatosCSV() throws SQLException{
         String rutaArchivoPersonal = ".\\main\\csv\\personal.csv";
         String rutaArchivoHabitat = ".\\main\\csv\\habitat.csv";
         String rutaArchivoZoo = ".\\main\\csv\\Zoo.csv";
@@ -28,12 +28,14 @@ public class BBDDrepositorio{
         String login = "root";
         String password = "";
         String url = "jdbc:mysql://127.0.0.1/" + db;
-        Connection connection = null;
 
           ExecutorService executor = Executors.newFixedThreadPool(6);
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection connection = DriverManager.getConnection(url, login, password);
+            System.out.println("Conexión a " + db + " correcta");
 
             executor.submit(() -> importarConDelay(connection, () -> importarPersonal(connection, rutaArchivoPersonal)));
             executor.submit(() -> importarConDelay(connection, () -> importarHabitat(connection, rutaArchivoHabitat)));
