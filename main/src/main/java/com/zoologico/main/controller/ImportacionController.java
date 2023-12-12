@@ -1,5 +1,7 @@
 package com.zoologico.main.controller;
 
+import java.sql.SQLException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +19,7 @@ public class ImportacionController {
 
     @ResponseBody
     @GetMapping("/datosCSV")
-    public String importarDatosCSV() {
+    public String importarDatosCSV() throws SQLException {
         bbddServicios.servicioBBDD();
         return "Importación de datos CSV realizada2";
     }

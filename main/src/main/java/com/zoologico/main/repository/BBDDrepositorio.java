@@ -31,28 +31,25 @@ public class BBDDrepositorio{
 
           ExecutorService executor = Executors.newFixedThreadPool(6);
 
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+          try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(url, login, password);
             System.out.println("Conexión a " + db + " correcta");
 
-            executor.submit(() -> importarConDelay(connection, () -> importarPersonal(connection, rutaArchivoPersonal)));
-            executor.submit(() -> importarConDelay(connection, () -> importarHabitat(connection, rutaArchivoHabitat)));
-            executor.submit(() -> importarConDelay(connection, () -> importarAnimales(connection, rutaArchivoAnimales)));
-            executor.submit(() -> importarConDelay(connection, () -> importarZoo(connection, rutaArchivoZoo)));
-            executor.submit(() -> importarConDelay(connection, () -> importarVisitas(connection, rutaArchivoVisitas)));
-            executor.submit(() -> importarConDelay(connection, () -> importarPrecios(connection, rutaArchivoPrecios)));
-
-            executor.shutdown();
-            executor.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
+            importarConDelay(connection, () -> importarPersonal(connection, rutaArchivoPersonal));
+            importarConDelay(connection, () -> importarHabitat(connection, rutaArchivoHabitat));
+            importarConDelay(connection, () -> importarAnimales(connection, rutaArchivoAnimales));
+            importarConDelay(connection, () -> importarZoo(connection, rutaArchivoZoo));
+            importarConDelay(connection, () -> importarVisitas(connection, rutaArchivoVisitas));
+            importarConDelay(connection, () -> importarPrecios(connection, rutaArchivoPrecios));
 
             System.out.println("Importación completa.");
 
-        } catch (ClassNotFoundException | InterruptedException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
+    
     
       
         
