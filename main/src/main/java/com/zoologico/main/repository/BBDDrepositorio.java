@@ -9,6 +9,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 import org.springframework.stereotype.Repository;
 @Repository
@@ -27,33 +30,32 @@ public class BBDDrepositorio{
         String url = "jdbc:mysql://127.0.0.1/" + db;
         Connection connection = null;
 
+          ExecutorService executor = Executors.newFixedThreadPool(6);
+
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection(url, login, password);
-            System.out.println("Conexión a " + db + " correcta");
 
-            importarPersonal(connection, rutaArchivoPersonal);
-            importarHabitat(connection, rutaArchivoHabitat);
-            importarAnimales(connection, rutaArchivoAnimales);
-            importarZoo(connection, rutaArchivoZoo); 
-            importarVisitas(connection, rutaArchivoVisitas);
-            importarPrecios(connection, rutaArchivoPrecios);
-           
+            executor.submit(() -> importarConDelay(connection, () -> importarPersonal(connection, rutaArchivoPersonal)));
+            executor.submit(() -> importarConDelay(connection, () -> importarHabitat(connection, rutaArchivoHabitat)));
+            executor.submit(() -> importarConDelay(connection, () -> importarAnimales(connection, rutaArchivoAnimales)));
+            executor.submit(() -> importarConDelay(connection, () -> importarZoo(connection, rutaArchivoZoo)));
+            executor.submit(() -> importarConDelay(connection, () -> importarVisitas(connection, rutaArchivoVisitas)));
+            executor.submit(() -> importarConDelay(connection, () -> importarPrecios(connection, rutaArchivoPrecios)));
+
+            executor.shutdown();
+            executor.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
 
             System.out.println("Importación completa.");
 
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (ClassNotFoundException | InterruptedException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                if (connection != null) {
-                    connection.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
         }
-}
+    }
+    
+      
+        
+      
+
 
     // Resto de tus métodos de importación...
 
@@ -96,7 +98,14 @@ public class BBDDrepositorio{
             e.printStackTrace();
         }
     }
-    
+    private static void importarConDelay(Connection connection, Runnable importarRunnable) {
+        try {
+            Thread.sleep(5000); // 5 segundos de retraso
+            importarRunnable.run();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
     
     
     
